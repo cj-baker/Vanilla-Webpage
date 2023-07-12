@@ -1,0 +1,9 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --header-font: "Playfair Display", serif;
+  --sub-heading-font: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: var(--header-font);
+}
