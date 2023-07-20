@@ -165,17 +165,19 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
+  font-size: 30px;
   text-decoration: none;
   color: var(--primary-color);
-  font-family: var(--header-font);
+  font-family: var(--sub-heading-font);
+  letter-spacing: 3px;
+  text-transform: uppercase;
   backface-visibility: hidden;
 }
 .back {
   transform: rotateY(180deg);
 }
 .card a {
-  font-size: 46px;
+  font-size: 42px;
   color: var(--primary-color);
 }
 
@@ -250,7 +252,10 @@ ul {
   .front,
   .back {
     text-align: center;
-    font-size: 22px;
+    font-size: 14px;
+  }
+  .card a {
+    font-size: 20px;
   }
   .card {
     aspect-ratio: 5 / 1;
