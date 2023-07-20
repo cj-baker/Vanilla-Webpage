@@ -4,7 +4,8 @@
   --sub-heading-font: "Poppins", sans-serif;
   --primary-color: whitesmoke;
   --secondary-color: black;
-  --hover-color: rgba(255, 255, 255, 0.4);
+  --primary-hover-color: rgba(255, 255, 255, 0.4);
+  --secondary-hover-color: rgba(0, 0, 0, 0.4);
 }
 html {
   scroll-behavior: smooth;
@@ -63,7 +64,7 @@ header a {
 }
 header a:hover {
   color: var(--primary-color);
-  background-color: var(--hover-color);
+  background-color: var(--primary-hover-color);
   transition: ease-in-out 300ms;
 }
 main {
@@ -89,6 +90,11 @@ main h3 {
   padding: 16px 32px;
   margin: 10px;
   display: inline-block;
+}
+.videos a:hover {
+  color: var(--secondary-color);
+  background-color: var(--secondary-hover-color);
+  transition: ease-in-out 300ms;
 }
 main img {
   width: 90%;
