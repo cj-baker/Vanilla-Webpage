@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@700&family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
@@ -21,27 +25,139 @@
       <header>
         <h3>.Yoga with Adriene.</h3>
         <h1>Adriene Mishler</h1>
-        <h2>A Professional Yoga Instructor and Host of Yoga with Adriene</h2>
-        <a href="#more">Learn More</a>
+        <h2>
+          A Professional Yoga Instructor and Host/Producer of Yoga with Adriene
+        </h2>
+        <a href="/#more">Learn More</a>
       </header>
-      <div class="body"></div>
+      <main>
+        <section class="about" id="more">
+          <div class="grid">
+            <div class="column">
+              <h3>about</h3>
+              <h1>About Adriene Mishler</h1>
+              <p>
+                Adriene Mishler is a professional Yoga instructor and the
+                Producer/Host of Yoga with Adriene, a free YouTube channel
+                focused on teaching everyone mindfulness and how to, as Adriene
+                says, "find what feels good". Adriene has become an inspiration
+                to many individuals, including myself, to do something that is
+                easier said than done: Show up for yourself. Her videos promote
+                self-love, positivity, and a physically healthy lifestyle.
+                Adriene's audience is anyone wanting to try or continue
+                practicing yoga, she leaves space on her channel for beginners,
+                intermediates, and pros alike. If the Yoga with Adriene YouTube
+                channel is not content for you, she also now has an SVOD
+                (Streaming Video On Demand) Service that you can find on her
+                FWFG (Fidn What Feels Good) Website.
+              </p>
+            </div>
+            <div class="column">
+              <img src="/images/mindfulness.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="vidoes">
+          <h3>watch</h3>
+          <h1>The 30 Day Yoga Journey</h1>
+
+          <p>
+            If you have a hard time commiting to a routine, the 30 Day Yoga
+            Journey really helps you learn to consistently show up for yourself
+            in a positive way. Check out these playlists created by Adriene
+            Mishler on her Yoga with Adriene YouTube channel.
+          </p>
+          <a href="https://www.youtube.com/@yogawithadriene" target="_blank"
+            >Go To YouTube Channel</a
+          >
+          <div
+            class="gallery js-flickity"
+            data-flickity-options='{"wrapAround": true} '
+          >
+            <iframe
+              class="gallery-cell"
+              src="https://www.youtube-nocookie.com/embed/videoseries?list=PLui6Eyny-Uzyp5P3Vcuv5qCHQOC8W6grN"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              class="gallery-cell"
+              src="https://www.youtube.com/embed/videoseries?list=PLui6Eyny-UzzFFfpiil94CUrWKVMaqmkm"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              class="gallery-cell"
+              src="https://www.youtube.com/embed/videoseries?list=PLui6Eyny-Uzx-IzGg48K4aHGyBwtPh7Sw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              class="gallery-cell"
+              src="https://www.youtube-nocookie.com/embed/videoseries?list=PLui6Eyny-UzzkcCfrpXcgUS0wfEGA-kej"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              class="gallery-cell"
+              src="https://www.youtube.com/embed/videoseries?list=PLui6Eyny-UzwIo3OBXV_KlsWaxUANvWhh"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section class="websites">
+          <div class="grid">
+            <div class="column">
+              <a href="">
+                <h1>Want to check out Yoga with Adriene videos?</h1></a
+              >
+            </div>
+            <div class="column">
+              <a href=""> <h1>Interested in downloading her videos?</h1></a>
+            </div>
+            <div class="column">
+              <a href=""> <h1>ready to subscribe for premium content?</h1></a>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer>
         <section class="grid">
           <div class="column">
             <h1>More About Adriene Mishler</h1>
             <ul>
               <li>
-                <a href="https://fwfg.com/"
+                <a href="https://fwfg.com/" target="_blank"
                   >Yoga with Adriene Offical Website</a
                 >
               </li>
               <li>
-                <a href="https://www.youtube.com/@yogawithadriene"
+                <a
+                  href="https://www.youtube.com/@yogawithadriene"
+                  target="_blank"
                   >YouTube Channel</a
                 >
               </li>
               <li>
-                <a href="https://en.wikipedia.org/wiki/Adriene_Mishler"
+                <a
+                  href="https://en.wikipedia.org/wiki/Adriene_Mishler"
+                  target="_blank"
                   >Wikipedia Page</a
                 >
               </li>
@@ -65,7 +181,9 @@
               This page was created as part of exercise for SheCodes Responsive
               Coding Workshop to develop my skills. This project was coded by
               Casey Baker and is
-              <a href="https://github.com/cj-baker/Vanilla-Webpage"
+              <a
+                href="https://github.com/cj-baker/Vanilla-Webpage"
+                target="_blank"
                 >Open Sourced</a
               >.
             </p>
@@ -73,5 +191,6 @@
         </section>
       </footer>
     </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
